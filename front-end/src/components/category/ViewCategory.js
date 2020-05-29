@@ -4,15 +4,8 @@ import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 import classes from "../../components/category/FieldView.module.css";
 import Aux from "../../hoc/Aux/aux";
-import * as actions from "../../store/actions/index"
-import { connect } from "react-redux"
 
 const ViewCategory = (props) => {
-  console.log("Categories id in category view file: ", props.passed);
-
-  console.log("Props received in category view is : ",props.categoriesById)
-
-
   return (
     <Aux>
       <section className={classes.FieldData}>
